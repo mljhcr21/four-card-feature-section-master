@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{ 
+    font-family: "Poppins", sans-serif;
+    background-color: hsl(0, 0%, 98%);
+    line-height: 1.5rem;
+}
+
+
+/* haerder */
+.headerContainer{
+    width: 100%;
+    padding: 1rem;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;justify-content: center;
+    align-items: center;
+    color: hsl(229, 6%, 66%);
+}
+
+.headerContainer h2{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 1px;
+    opacity: .5;
+    font-weight: bolder;
+    padding: 1rem;
+    color: #333;
+}
+
+.headerContainer span{
+    display: block;
+    font-size: 2rem;
+}
+
+.headerContainer p{
+    display: inline-block;
+    min-width: 500px;
+    max-width: 650px;
+    letter-spacing: 1px;
+    font-size: 1rem ;
+    padding: 0 3.5rem;
+    text-align: center;
+}
+
+
+/* cardsContainer and cards */
+.cardsContainer{
+    margin: 1px auto;
+    max-width: 1440px;
+    min-height: 520px;
+    display: flex;
+    justify-content:center;
+    align-items:center ;
+    gap: 2rem;
+
+}
+
+.cardsContainer .doubleCards{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card{
+    max-width: 350px;
+    min-height: 250px;
+    box-shadow: 0px 1px 4px #afafaf;
+    border-radius: 5px;
+    margin: 20px;
+   
+}
+
+
+/* card h2 and p tag */
+
+.card h3,p{
+    margin: 15px 30px; 
+}
+.card h3{
+    font-weight:bolder;
+    color: #333;
+}
+.card p{
+    color: hsl(229, 6%, 66%);;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+
+
+/* card border color */
+.card1{
+    border-top: 4px solid hsl(180, 62%, 55%) ;
+}
+
+.card2{
+    border-top: 4px solid hsl(0, 78%, 62%) ;
+}
+
+.card3{
+    border-top: 4px solid hsl(34, 97%, 64%) ;
+}
+
+.card4{
+    border-top: 4px solid hsl(212, 86%, 64%) ;
+}
+
+/* image container and alignment */
+.imgContainer{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-self: flex-end;
+}
+
+.imgContainer img{
+    display: inline-block;
+    margin: 2rem;
+}
+
+
+/* responsive */
+
+@media (max-width:992px){
+    .cardsContainer{
+        flex-direction: column;
+    }
+}
